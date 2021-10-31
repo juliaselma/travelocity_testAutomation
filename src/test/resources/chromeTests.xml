@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="chromeTests">
+    <test name="Travelocity on Chrome">
+        <parameter name="URL" value="https://www.travelocity.com/"></parameter>
+        <parameter name="browserType" value="chrome"></parameter>
+        <classes>
+            <class name="tests.ResultsElementsVerification"/>
+            <class name="tests.SortShortestDurationFlightsTests"/>
+            <class name="tests.FirstFlightResultTests"/>
+            <class name="tests.SecondFlightResultTests"/>
+            <class name="tests.ResultsElementsVerification"/>
+            <class name="tests.CheckOutTests"/>
+        </classes>
+    </test>
+</suite>
